@@ -18,11 +18,11 @@
 ## Adding the themes
 
 1. Clone this repository. 
-2. First create a theme folder at bat's config directory by running:
+2. First create a theme folder in bat's configuration directory by running:
     ```bash
 	mkdir -p "$(bat --config-dir)/themes"
 	```
-3. Copy all the `.tmTheme` files from the repository folder to the bat's theme folder:
+3. Copy all the `.tmTheme` files from the cloned folder to bat's theme folder:
 	```bash
 	cp *.tmTheme "$(bat --config-dir)/themes"
 	```
@@ -32,14 +32,14 @@
    ```
 5. Run `bat --list-themes` and check if all the 4 theme flavours are present in the list. 
 ## Usage 
+
 There are two ways to get the theme working. 
-1. Using bat's config file:
-    - Add the following to bat's configiration file:
+1. Add the following to bat's configuration file:
 	```bash
-	--theme="Mocha"
+	--theme="Catppuccin-mocha"
 	```
 2. Using the `BAT_THEME` environmental variable:
-   - Export the environmental variable inside your shell's configuration file: ```BAT_THEME="Mocha"```. The method to export the variable depends on your shell. 
+   - Export the environmental variable inside your shell's configuration file: ```BAT_THEME="Catppuccin-mocha"```. The method to export the variable depends on your shell. 
 
 
 
