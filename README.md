@@ -6,13 +6,13 @@
 </h3>
 
 <p align="center">
-	<a href="https://github.com/ghostx31/bat/stargazers"><img src="https://img.shields.io/github/stars/ghostx31/bat?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
-	<a href="https://github.com/ghostx31/bat/issues"><img src="https://img.shields.io/github/issues/ghostx31/bat?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
-	<a href="https://github.com/ghostx31/bat/contributors"><img src="https://img.shields.io/github/contributors/ghostx31/bat?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
+	<a href="https://github.com/catppuccin/bat/stargazers"><img src="https://img.shields.io/github/stars/catppuccin/bat?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
+	<a href="https://github.com/catppuccin/bat/issues"><img src="https://img.shields.io/github/issues/catppuccin/bat?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
+	<a href="https://github.com/catppuccin/bat/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/bat?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
 </p>
 
 <p align="center">
-	<img src="https://raw.githubusercontent.com/ghostx31/bat/main/assets/preview.png"/>
+	<img src="https://raw.githubusercontent.com/catppuccin/bat/main/assets/preview.png"/>
 </p>
 
 ## Adding the themes
@@ -39,7 +39,7 @@ There are two ways to get the theme working.
 	--theme="Catppuccin-mocha"
 	```
 2. Using the `BAT_THEME` environmental variable:
-   - Export the environmental variable inside your shell's configuration file: ```BAT_THEME="Catppuccin-mocha"```. The method to export the variable depends on your shell. 
+   - Export the environmental variable inside your shell's configuration file: `BAT_THEME="Catppuccin-mocha"`. The method to export the variable depends on your shell. 
 
 
 
