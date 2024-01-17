@@ -17,21 +17,42 @@
 
 ## Adding the themes
 
-1. Clone this repository. 
-2. First create a theme folder in bat's configuration directory by running:
+1. First create a theme folder in bat's configuration directory by running:
     ```bash
 	mkdir -p "$(bat --config-dir)/themes"
 	```
-3. Copy all the `.tmTheme` files from the cloned folder to bat's theme folder:
-	```bash
-	cp *.tmTheme "$(bat --config-dir)/themes"
-	```
-4. Rebuild bat's cache:
-   ```bash
+2. Copy the `.tmTheme` files to bat's theme folder:
+
+  - Latte
+	  ```sh 
+    wget -P "$(bat --config-dir)/themes" https://raw.githubusercontent.com/catppuccin/bat/main/Catppuccin-latte.tmTheme
+    ```
+
+  - Frappe
+	  ```sh 
+    wget -P "$(bat --config-dir)/themes" https://raw.githubusercontent.com/catppuccin/bat/main/Catppuccin-frappe.tmTheme
+    ```
+
+  - Macchiato
+	  ```sh 
+    wget -P "$(bat --config-dir)/themes" https://raw.githubusercontent.com/catppuccin/bat/main/Catppuccin-macchiato.tmTheme
+    ```
+
+  - Mocha
+	  ```sh 
+    wget -P "$(bat --config-dir)/themes" https://raw.githubusercontent.com/catppuccin/bat/main/Catppuccin-mocha.tmTheme
+    ```
+
+3. Rebuild bat's cache:
+   ```sh
    bat cache --build
    ```
-5. Run `bat --list-themes` and check if all the 4 theme flavours are present in the list. 
-## Usage 
+4. And check if all the 4 theme flavours are present in the list.
+   ```sh
+   bat --list-themes
+   ```
+
+## Usage
 
 There are two ways to get the theme working. 
 1. Add the following to bat's configuration file:
@@ -39,9 +60,7 @@ There are two ways to get the theme working.
 	--theme="Catppuccin-mocha"
 	```
 2. Using the `BAT_THEME` environmental variable:
-   - Export the environmental variable inside your shell's configuration file: `BAT_THEME="Catppuccin-mocha"`. The method to export the variable depends on your shell. 
-
-
+   - Export the environmental variable inside your shell's configuration file: `BAT_THEME="Catppuccin-mocha"`. The method to export the variable depends on your shell.
 
 
 ## 💝 Thanks to
