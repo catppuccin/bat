@@ -32,10 +32,6 @@
       }
     }
   },
-  "redirects": {
-    "https://deno.land/std/path/join.ts": "https://deno.land/std@0.217.0/path/join.ts",
-    "https://deno.land/std/path/mod.ts": "https://deno.land/std@0.217.0/path/mod.ts"
-  },
   "remote": {
     "https://deno.land/std@0.217.0/assert/assert.ts": "bec068b2fccdd434c138a555b19a2c2393b71dfaada02b7d568a01541e67cdc5",
     "https://deno.land/std@0.217.0/assert/assertion_error.ts": "9f689a101ee586c4ce92f52fa7ddd362e86434ffdf1f848e45987dc7689976b8",
@@ -51,10 +47,5 @@
     "https://deno.land/std@0.217.0/path/windows/_util.ts": "d5f47363e5293fced22c984550d5e70e98e266cc3f31769e1710511803d04808",
     "https://deno.land/std@0.217.0/path/windows/join.ts": "8d03530ab89195185103b7da9dfc6327af13eabdcd44c7c63e42e27808f50ecf",
     "https://deno.land/std@0.217.0/path/windows/normalize.ts": "78126170ab917f0ca355a9af9e65ad6bfa5be14d574c5fb09bb1920f52577780"
-  },
-  "workspace": {
-    "dependencies": [
-      "npm:@catppuccin/vscode"
-    ]
   }
 }
