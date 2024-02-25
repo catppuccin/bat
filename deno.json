@@ -1,0 +1,5 @@
+{
+  "imports": {
+    "@catppuccin/vscode": "npm:@catppuccin/vscode"
+  }
+}
