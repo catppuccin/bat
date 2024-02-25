@@ -19,19 +19,19 @@ import { convert } from "./convert.ts";
 export type VSCTheme = typeof Latte;
 
 const themes = {
-  latte: {
+  Latte: {
     uuid: "96a262cd-4b2f-49f5-9125-8dd0077cbfe1",
     vscode: Latte satisfies VSCTheme,
   },
-  frappe: {
+  Frappe: {
     uuid: "e0ada983-8938-490c-86f0-97a1a0ec58e4",
     vscode: Frappe satisfies VSCTheme,
   },
-  macchiato: {
+  Macchiato: {
     uuid: "02b2bdf3-9eb7-4396-bf04-f17f1468f99f",
     vscode: Macchiato satisfies VSCTheme,
   },
-  mocha: {
+  Mocha: {
     uuid: "627ce890-fabb-4d39-9819-7be71f4bdca7",
     vscode: Mocha satisfies VSCTheme,
   },
@@ -43,7 +43,7 @@ Deno.mkdirSync(outDir, { recursive: true });
 
 Object.entries(themes).forEach(([name, { uuid, vscode }]) => {
   const plistContent = plist.build(convert(vscode, uuid));
-  const fileName = `Catppuccin-${name}.tmTheme`;
+  const fileName = `Catppuccin ${name}.tmTheme`;
 
   Deno.writeTextFile(join(outDir, fileName), plistContent);
   console.log(`Wrote ${fileName}`);
