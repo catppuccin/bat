@@ -26,10 +26,10 @@ mkdir -p "$(bat --config-dir)/themes"
 3. Copy the theme files from this repository:
 
 ```bash
-curl --output-dir "$(bat --config-dir)/themes" -LO https://github.com/catppuccin/bat/raw/main/themes/Catppuccin-latte.tmTheme
-curl --output-dir "$(bat --config-dir)/themes" -LO https://github.com/catppuccin/bat/raw/main/themes/Catppuccin-frappe.tmTheme
-curl --output-dir "$(bat --config-dir)/themes" -LO https://github.com/catppuccin/bat/raw/main/themes/Catppuccin-macchiato.tmTheme
-curl --output-dir "$(bat --config-dir)/themes" -LO https://github.com/catppuccin/bat/raw/main/themes/Catppuccin-mocha.tmTheme
+curl --output-dir "$(bat --config-dir)/themes" -LO https://github.com/catppuccin/bat/raw/main/themes/Catppuccin%20Latte.tmTheme
+curl --output-dir "$(bat --config-dir)/themes" -LO https://github.com/catppuccin/bat/raw/main/themes/Catppuccin%20Frappe.tmTheme
+curl --output-dir "$(bat --config-dir)/themes" -LO https://github.com/catppuccin/bat/raw/main/themes/Catppuccin%20Macchiato.tmTheme
+curl --output-dir "$(bat --config-dir)/themes" -LO https://github.com/catppuccin/bat/raw/main/themes/Catppuccin%20Mocha.tmTheme
 ```
 
 4. Rebuild bat's cache:
@@ -49,12 +49,12 @@ There are two ways to get `bat` to default to Catppuccin:
 Edit your configuration file, located at `bat --config-file` (usually `~/.config/bat/config`):
 
 ```
---theme="Catppuccin-mocha"
+--theme="Catppuccin Mocha"
 ```
 
 ### Environment variable
 
-You can alternatively use the `BAT_THEME` environment variable. Export the environment variable inside your shell's configuration file: `BAT_THEME="Catppuccin-mocha"`.
+You can alternatively use the `BAT_THEME` environment variable. Export the environment variable inside your shell's configuration file: `BAT_THEME="Catppuccin Mocha"`.
 
 The method to export the variable depends on your shell.
 
