@@ -1,18 +1,10 @@
 import { join } from "https://deno.land/std@0.217.0/path/join.ts";
 
 import plist from "npm:plist";
-import Latte from "npm:@catppuccin/vscode/themes/latte.json" with {
-  type: "json",
-};
-import Frappe from "npm:@catppuccin/vscode/themes/frappe.json" with {
-  type: "json",
-};
-import Macchiato from "npm:@catppuccin/vscode/themes/macchiato.json" with {
-  type: "json",
-};
-import Mocha from "npm:@catppuccin/vscode/themes/mocha.json" with {
-  type: "json",
-};
+import Latte from "npm:@catppuccin/vscode/themes/latte.json" with { type: "json" };
+import Frappe from "npm:@catppuccin/vscode/themes/frappe.json" with { type: "json" };
+import Macchiato from "npm:@catppuccin/vscode/themes/macchiato.json" with { type: "json" };
+import Mocha from "npm:@catppuccin/vscode/themes/mocha.json" with { type: "json" };
 
 import { convert } from "./convert.ts";
 
