@@ -17,36 +17,51 @@
 
 ## Adding the themes
 
-1. Clone this repository. 
-2. First create a theme folder in bat's configuration directory by running:
-    ```bash
-	mkdir -p "$(bat --config-dir)/themes"
-	```
-3. Copy all the `.tmTheme` files from the cloned folder to bat's theme folder:
-	```bash
-	cp *.tmTheme "$(bat --config-dir)/themes"
-	```
+1. Create a theme folder in bat's configuration directory by running:
+
+```console
+mkdir -p "$(bat --config-dir)/themes"
+```
+
+3. Copy the theme files from this repository:
+
+```bash
+curl --output-dir "$(bat --config-dir)/themes" -LO https://github.com/catppuccin/bat/raw/main/themes/Catppuccin-latte.tmTheme
+curl --output-dir "$(bat --config-dir)/themes" -LO https://github.com/catppuccin/bat/raw/main/themes/Catppuccin-frappe.tmTheme
+curl --output-dir "$(bat --config-dir)/themes" -LO https://github.com/catppuccin/bat/raw/main/themes/Catppuccin-macchiato.tmTheme
+curl --output-dir "$(bat --config-dir)/themes" -LO https://github.com/catppuccin/bat/raw/main/themes/Catppuccin-mocha.tmTheme
+```
+
 4. Rebuild bat's cache:
-   ```bash
-   bat cache --build
-   ```
-5. Run `bat --list-themes` and check if all the 4 theme flavours are present in the list. 
-## Usage 
 
-There are two ways to get the theme working. 
-1. Add the following to bat's configuration file:
-	```bash
-	--theme="Catppuccin-mocha"
-	```
-2. Using the `BAT_THEME` environmental variable:
-   - Export the environmental variable inside your shell's configuration file: `BAT_THEME="Catppuccin-mocha"`. The method to export the variable depends on your shell. 
+```console
+bat cache --build
+```
 
+5. Run `bat --list-themes` and check if the themes are present in the list.
 
+## Usage
 
+There are two ways to get `bat` to default to Catppuccin:
+
+### Configuration file
+
+Edit your configuration file, located at `bat --config-file` (usually `~/.config/bat/config`):
+
+```
+--theme="Catppuccin-mocha"
+```
+
+### Environment variable
+
+You can alternatively use the `BAT_THEME` environment variable. Export the environment variable inside your shell's configuration file: `BAT_THEME="Catppuccin-mocha"`.
+
+The method to export the variable depends on your shell.
 
 ## 💝 Thanks to
 
 - [ghostx31](https://github.com/ghostx31)
+- [winston](https://github.com/nekowinston)
 
 &nbsp;
 
