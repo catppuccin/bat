@@ -19,7 +19,7 @@
 
 1. Create a theme folder in bat's configuration directory by running:
 
-```console
+```bash
 mkdir -p "$(bat --config-dir)/themes"
 ```
 
@@ -34,11 +34,11 @@ curl --output-dir "$(bat --config-dir)/themes" -LO https://github.com/catppuccin
 
 4. Rebuild bat's cache:
 
-```console
+```bash
 bat cache --build
 ```
 
-5. Run `bat --list-themes` and check if the themes are present in the list.
+5. Run `bat --list-themes`, and check if the themes are present in the list.
 
 ## Usage
 
