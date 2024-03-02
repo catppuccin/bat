@@ -1,0 +1,8 @@
+{
+  "tasks": {
+    "build": "deno run --allow-write=. ./src/main.ts"
+  },
+  "fmt": {
+    "lineWidth": 120
+  }
+}
