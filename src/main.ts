@@ -35,7 +35,7 @@ Deno.mkdirSync(outDir, { recursive: true });
 
 Object.entries(themes).forEach(([name, { uuid, vscode }]) => {
   const plistContent = plist.build(convert(vscode, uuid));
-  const fileName = `Catppuccin-${name}.tmTheme`;
+  const fileName = `Catppuccin ${name}.tmTheme`;
 
   Deno.writeTextFile(join(outDir, fileName), plistContent);
   console.log(`Wrote ${fileName}`);
