@@ -45,10 +45,10 @@ mkdir -p "$(bat --config-dir)/themes"
 3. Copy the theme files from this repository:
 
 ```bash
-curl --output-dir "$(bat --config-dir)/themes" -LO https://github.com/catppuccin/bat/raw/main/themes/Catppuccin%20Latte.tmTheme
-curl --output-dir "$(bat --config-dir)/themes" -LO https://github.com/catppuccin/bat/raw/main/themes/Catppuccin%20Frappe.tmTheme
-curl --output-dir "$(bat --config-dir)/themes" -LO https://github.com/catppuccin/bat/raw/main/themes/Catppuccin%20Macchiato.tmTheme
-curl --output-dir "$(bat --config-dir)/themes" -LO https://github.com/catppuccin/bat/raw/main/themes/Catppuccin%20Mocha.tmTheme
+wget -P "$(bat --config-dir)/themes" https://github.com/catppuccin/bat/raw/main/themes/Catppuccin%20Latte.tmTheme
+wget -P "$(bat --config-dir)/themes" https://github.com/catppuccin/bat/raw/main/themes/Catppuccin%20Frappe.tmTheme
+wget -P "$(bat --config-dir)/themes" https://github.com/catppuccin/bat/raw/main/themes/Catppuccin%20Macchiato.tmTheme
+wget -P "$(bat --config-dir)/themes" https://github.com/catppuccin/bat/raw/main/themes/Catppuccin%20Mocha.tmTheme
 ```
 
 4. Rebuild bat's cache:
