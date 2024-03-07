@@ -25,6 +25,7 @@ export const convert = (vscTheme: VSCTheme, uuid: string) => {
           selection: colors["editor.selectionBackground"],
           activeGuide: colors["editorIndentGuide.background"],
           findHighlight: colors["editor.findMatchHighlightBackground"],
+          gutterForeground: colors["editorLineNumber.foreground"],
         },
       },
       ...vscTheme.tokenColors.map((tokenColor) => {

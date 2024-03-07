@@ -35,6 +35,8 @@
           <string>#45475a</string>
           <key>findHighlight</key>
           <string>#3e5767</string>
+          <key>gutterForeground</key>
+          <string>#7f849c</string>
         </dict>
       </dict>
       <dict>
