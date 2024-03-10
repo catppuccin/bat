@@ -1,18 +1,26 @@
 import { join } from "https://deno.land/std@0.219.1/path/join.ts";
 import { parseArgs } from "https://deno.land/std@0.219.1/cli/parse_args.ts";
 
-import { compile } from "npm:@catppuccin/vscode@3.12.0";
+import { compile as vscCompile } from "npm:@catppuccin/vscode@3.12.0";
 import plist from "npm:plist@3.1.0";
+
+import { convert } from "./convert.ts";
 
 const args = parseArgs(Deno.args, {
   string: ["overrides"],
 });
 
-export type VSCTheme = ReturnType<typeof compile>;
-type Overrides = (Parameters<typeof compile>)[1];
-const overrides: Overrides = args.overrides ? { colorOverrides: JSON.parse(args.overrides) } : {};
+export type VSCTheme = ReturnType<typeof vscCompile>;
+type FlavorName = (Parameters<typeof vscCompile>)[0];
+type Overrides = (Parameters<typeof vscCompile>)[1];
 
-import { convert } from "./convert.ts";
+// string out undefined keys via JSON.parse(JSON.stringify())
+const compile = (name: FlavorName, overrides: Overrides): VSCTheme => {
+  const theme = JSON.parse(JSON.stringify(vscCompile(name, overrides)));
+  return theme as VSCTheme;
+};
+
+const overrides: Overrides = args.overrides ? { colorOverrides: JSON.parse(args.overrides) } : {};
 
 const themes = {
   Latte: {
