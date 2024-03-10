@@ -35,9 +35,7 @@ export const convert = (vscTheme: VSCTheme, uuid: string) => {
 
         return {
           ...tokenColor,
-          scope: Array.isArray(tokenColor.scope)
-            ? tokenColor.scope.join(", ")
-            : tokenColor.scope,
+          scope: Array.isArray(tokenColor.scope) ? tokenColor.scope.join(", ") : tokenColor.scope,
         };
       }),
     ],
