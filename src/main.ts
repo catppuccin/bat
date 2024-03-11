@@ -12,7 +12,7 @@ const args = parseArgs(Deno.args, {
 });
 
 export type VSCTheme = ReturnType<typeof vscCompile>;
-type Overrides = (Parameters<typeof vscCompile>)[1];
+export type Overrides = (Parameters<typeof vscCompile>)[1];
 
 // string out undefined keys via JSON.parse(JSON.stringify())
 const compile = (name: FlavorName, overrides: Overrides): VSCTheme => {
@@ -62,7 +62,7 @@ if (import.meta.main) {
   flavorEntries.map(([flavorName]) => {
     const { uuid, vscode } = themes[flavorName];
 
-    const plistContent = plist.build(convert(flavorName, vscode, uuid));
+    const plistContent = plist.build(convert(flavorName, vscode, uuid, overrides));
     const fileName = `Catppuccin ${capitalize(flavorName)}.tmTheme`;
 
     Deno.writeTextFile(join(outDir, fileName), plistContent);
