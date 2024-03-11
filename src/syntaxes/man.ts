@@ -1,5 +1,5 @@
-import { Palette } from "./convert.ts";
-import { VSCTheme } from "./main.ts";
+import { type Palette } from "../convert.ts";
+import { type VSCTheme } from "../main.ts";
 
 export const batTokens = (p: Palette): VSCTheme["tokenColors"] => [
   {

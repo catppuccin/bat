@@ -2,6 +2,7 @@
   "version": "3",
   "packages": {
     "specifiers": {
+      "npm:@catppuccin/palette@1.1.0": "npm:@catppuccin/palette@1.1.0",
       "npm:@catppuccin/vscode": "npm:@catppuccin/vscode@3.12.0",
       "npm:plist": "npm:plist@3.1.0"
     },
@@ -52,8 +53,6 @@
     "https://deno.land/std@0.217.0/path/posix/normalize.ts": "baeb49816a8299f90a0237d214cef46f00ba3e95c0d2ceb74205a6a584b58a91",
     "https://deno.land/std@0.217.0/path/windows/_util.ts": "d5f47363e5293fced22c984550d5e70e98e266cc3f31769e1710511803d04808",
     "https://deno.land/std@0.217.0/path/windows/join.ts": "8d03530ab89195185103b7da9dfc6327af13eabdcd44c7c63e42e27808f50ecf",
-    "https://deno.land/std@0.217.0/path/windows/normalize.ts": "78126170ab917f0ca355a9af9e65ad6bfa5be14d574c5fb09bb1920f52577780",
-    "https://deno.land/x/catppuccin@v1.1.0/mod.ts": "47f1e4ea5c1729259dc621b1d4b1277cb008db5743d01ce845254ea2b1a8835b",
-    "https://deno.land/x/catppuccin@v1.1.0/palette.json": "0cddd2826c55c631f626a00562d0ee1f15de38893d4a7ddf4b06c9e0440fefef"
+    "https://deno.land/std@0.217.0/path/windows/normalize.ts": "78126170ab917f0ca355a9af9e65ad6bfa5be14d574c5fb09bb1920f52577780"
   }
 }

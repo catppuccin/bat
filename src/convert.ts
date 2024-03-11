@@ -1,6 +1,6 @@
-import { ColorName, FlavorName, flavors } from "https://deno.land/x/catppuccin@v1.1.0/mod.ts";
-import { VSCTheme } from "./main.ts";
-import { batTokens } from "./man.ts";
+import { type ColorName, type FlavorName, flavors } from "npm:@catppuccin/palette@1.1.0";
+import { type VSCTheme } from "./main.ts";
+import { batTokens } from "./syntaxes/man.ts";
 
 export type Palette = Record<ColorName, string>;
 
@@ -9,10 +9,11 @@ export const convert = (flavor: FlavorName, vscTheme: VSCTheme, uuid: string) =>
   const slug = vscTheme.name.replace(/\s+/g, "-").toLowerCase();
   const semanticClass = `theme.${vscTheme.type}.${slug}`;
 
-  const palette = flavors[flavor].colorEntries.reduce((acc, [colorName, color]) => ({
-    ...acc,
-    [colorName]: color.hex,
-  }), {} as Palette);
+  const palette = flavors[flavor].colorEntries
+    .reduce((acc, [colorName, color]) => ({
+      ...acc,
+      [colorName]: color.hex,
+    }), {} as Palette);
 
   return {
     name: vscTheme.name,
@@ -47,9 +48,7 @@ export const convert = (flavor: FlavorName, vscTheme: VSCTheme, uuid: string) =>
 
         return {
           ...tokenColor,
-          scope: Array.isArray(tokenColor.scope)
-            ? tokenColor.scope.join(", ")
-            : tokenColor.scope,
+          scope: Array.isArray(tokenColor.scope) ? tokenColor.scope.join(", ") : tokenColor.scope,
         };
       }),
     ],
