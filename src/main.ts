@@ -34,7 +34,7 @@ const outDir = new URL("../themes", import.meta.url).pathname;
 Deno.mkdirSync(outDir, { recursive: true });
 
 Object.entries(themes).forEach(([name, { uuid, vscode }]) => {
-  const plistContent = plist.build(convert(vscode, uuid));
+  const plistContent = plist.build(convert(name.toLocaleLowerCase() as FlavorName, vscode, uuid));
   const fileName = `Catppuccin ${name}.tmTheme`;
 
   Deno.writeTextFile(join(outDir, fileName), plistContent);

@@ -1,9 +1,18 @@
+import { ColorName, FlavorName, flavors } from "https://deno.land/x/catppuccin@v1.1.0/mod.ts";
 import { VSCTheme } from "./main.ts";
+import { batTokens } from "./man.ts";
 
-export const convert = (vscTheme: VSCTheme, uuid: string) => {
+export type Palette = Record<ColorName, string>;
+
+export const convert = (flavor: FlavorName, vscTheme: VSCTheme, uuid: string) => {
   const { colors } = vscTheme;
   const slug = vscTheme.name.replace(/\s+/g, "-").toLowerCase();
   const semanticClass = `theme.${vscTheme.type}.${slug}`;
+
+  const palette = flavors[flavor].colorEntries.reduce((acc, [colorName, color]) => ({
+    ...acc,
+    [colorName]: color.hex,
+  }), {} as Palette);
 
   return {
     name: vscTheme.name,
@@ -28,7 +37,10 @@ export const convert = (vscTheme: VSCTheme, uuid: string) => {
           gutterForeground: colors["editorLineNumber.foreground"],
         },
       },
-      ...vscTheme.tokenColors.map((tokenColor) => {
+      ...[
+        ...vscTheme.tokenColors,
+        ...batTokens(palette),
+      ].map((tokenColor) => {
         if (tokenColor.scope == null || tokenColor.scope === "") {
           return { ...tokenColor };
         }
