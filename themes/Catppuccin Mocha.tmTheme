@@ -30,7 +30,7 @@
           <key>accent</key>
           <string>#cba6f7</string>
           <key>selection</key>
-          <string>#585b7066</string>
+          <string>#9399b240</string>
           <key>activeGuide</key>
           <string>#45475a</string>
           <key>findHighlight</key>
@@ -1987,6 +1987,33 @@
         <dict>
           <key>foreground</key>
           <string>#cdd6f4</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>scope</key>
+        <string>markup.heading.synopsis.man, markup.heading.title.man, markup.heading.other.man, markup.heading.env.man</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#cba6f7</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>scope</key>
+        <string>markup.heading.commands.man</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#89b4fa</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>scope</key>
+        <string>markup.heading.env.man</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#f5c2e7</string>
         </dict>
       </dict>
     </array>

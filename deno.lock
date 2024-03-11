@@ -2,13 +2,20 @@
   "version": "3",
   "packages": {
     "specifiers": {
-      "npm:@catppuccin/vscode": "npm:@catppuccin/vscode@3.11.1",
+      "npm:@catppuccin/palette@1.1.0": "npm:@catppuccin/palette@1.1.0",
+      "npm:@catppuccin/vscode": "npm:@catppuccin/vscode@3.12.0",
       "npm:plist": "npm:plist@3.1.0"
     },
     "npm": {
-      "@catppuccin/vscode@3.11.1": {
-        "integrity": "sha512-xuYqflcimQoWcX7c4Cug6KM7tX4NjVN770+aXZwUxLnP72JB1ItVAQlaV/Vimx6CxS8Aa19T8r6gorxqbEz//g==",
+      "@catppuccin/palette@1.1.0": {
+        "integrity": "sha512-ef3q3/MfdKc2EmUWiLrBrBKLFMGbukC1mzJh+QPINP7ovmUQycImSRjf/LMD4ti9lcu9NrYv4++zeoO2Z5lPxQ==",
         "dependencies": {}
+      },
+      "@catppuccin/vscode@3.12.0": {
+        "integrity": "sha512-fsKQiQyh8XFzh2+adIlYR0kENoKIXR6W+eGAAs+GubLcLbBNmJwdWdip4wvoWU1qSR41mbrpkyczHKTlwUwNoQ==",
+        "dependencies": {
+          "@catppuccin/palette": "@catppuccin/palette@1.1.0"
+        }
       },
       "@xmldom/xmldom@0.8.10": {
         "integrity": "sha512-2WALfTl4xo2SkGCYRt6rDTFfk9R1czmBvUQy12gK2KuRKIpWEhcbbzy8EZXtz/jkRqHX8bFEc6FC1HjX4TUWYw==",

@@ -42,7 +42,7 @@
 mkdir -p "$(bat --config-dir)/themes"
 ```
 
-3. Copy the theme files from this repository:
+2. Copy the theme files from this repository:
 
 ```bash
 wget -P "$(bat --config-dir)/themes" https://github.com/catppuccin/bat/raw/main/themes/Catppuccin%20Latte.tmTheme
@@ -51,13 +51,13 @@ wget -P "$(bat --config-dir)/themes" https://github.com/catppuccin/bat/raw/main/
 wget -P "$(bat --config-dir)/themes" https://github.com/catppuccin/bat/raw/main/themes/Catppuccin%20Mocha.tmTheme
 ```
 
-4. Rebuild bat's cache:
+3. Rebuild bat's cache:
 
 ```bash
 bat cache --build
 ```
 
-5. Run `bat --list-themes`, and check if the themes are present in the list.
+4. Run `bat --list-themes`, and check if the themes are present in the list.
 
 ## Usage
 
@@ -76,6 +76,10 @@ Edit your configuration file, located at `bat --config-file` (usually `~/.config
 You can alternatively use the `BAT_THEME` environment variable. Export the environment variable inside your shell's configuration file: `BAT_THEME="Catppuccin Mocha"`.
 
 The method to export the variable depends on your shell.
+
+### Extra: using bat as a manpager
+
+See https://github.com/sharkdp/bat#man for instructions on how to use `bat` for your `man` output.
 
 ## 💝 Thanks to
 
