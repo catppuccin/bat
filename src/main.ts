@@ -8,7 +8,7 @@ import plist from "npm:plist@3.1.0";
 import { convert } from "./convert.ts";
 
 const args = parseArgs(Deno.args, {
-  string: ["overrides"],
+  string: ["color-overrides"],
 });
 
 export type VSCTheme = ReturnType<typeof vscCompile>;
@@ -20,7 +20,7 @@ const compile = (name: FlavorName, overrides: Overrides): VSCTheme => {
   return theme as VSCTheme;
 };
 
-const overrides: Overrides = args.overrides ? { colorOverrides: JSON.parse(args.overrides) } : {};
+const overrides: Overrides = args["color-overrides"] ? { colorOverrides: JSON.parse(args["color-overrides"]) } : {};
 
 const themes: Record<FlavorName, { uuid: string; vscode: VSCTheme }> = {
   latte: {
