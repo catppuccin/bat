@@ -1,7 +1,7 @@
 import { type Palette } from "../convert.ts";
 import { type VSCTheme } from "../main.ts";
 
-export const batTokens = (p: Palette): VSCTheme["tokenColors"] => [
+export default (p: Palette): VSCTheme["tokenColors"] => [
   {
     scope: [
       "markup.heading.synopsis.man",

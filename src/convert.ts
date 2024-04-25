@@ -1,6 +1,6 @@
 import { type ColorName, type FlavorName, flavors } from "npm:@catppuccin/palette@1.1.0";
 import type { Overrides, VSCTheme } from "./main.ts";
-import { batTokens } from "./syntaxes/man.ts";
+import { customTokens } from "./syntaxes/index.ts";
 
 export type Palette = Record<ColorName, string>;
 
@@ -44,7 +44,7 @@ export const convert = (flavor: FlavorName, vscTheme: VSCTheme, uuid: string, ov
       },
       ...[
         ...vscTheme.tokenColors,
-        ...batTokens(palette),
+        ...customTokens(palette),
       ].map((tokenColor) => {
         if (tokenColor.scope == null || tokenColor.scope === "") {
           return { ...tokenColor };
