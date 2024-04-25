@@ -31,7 +31,7 @@ export const convert = (flavor: FlavorName, vscTheme: VSCTheme, uuid: string, ov
           background: colors["editor.background"],
           foreground: colors["editor.foreground"],
           caret: colors["editorCursor.foreground"],
-          lineHighlight: colors["editor.lineHighlightBackground"],
+          lineHighlight: palette.surface0,
 
           misspelling: colors["editorError.foreground"],
           accent: colors["activityBar.foreground"],
