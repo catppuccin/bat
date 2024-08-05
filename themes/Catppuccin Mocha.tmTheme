@@ -276,7 +276,7 @@
         <key>name</key>
         <string>Namespaces</string>
         <key>scope</key>
-        <string>entity.name.namespace</string>
+        <string>entity.name.namespace, entity.name</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
