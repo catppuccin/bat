@@ -34,28 +34,28 @@
 <img src="assets/mocha.webp"/>
 </details>
 
-## Adding the themes
+## Usage
 
-1. Create a theme folder in bat's configuration directory by running:
+1. Create a theme folder in bat's [configuration directory](https://github.com/sharkdp/bat#configuration-file) by running:
 
-```bash
-mkdir -p "$(bat --config-dir)/themes"
-```
+   ```bash
+   mkdir -p "$(bat --config-dir)/themes"
+   ```
 
 2. Copy the theme files from this repository:
 
-```bash
-wget -P "$(bat --config-dir)/themes" https://github.com/catppuccin/bat/raw/main/themes/Catppuccin%20Latte.tmTheme
-wget -P "$(bat --config-dir)/themes" https://github.com/catppuccin/bat/raw/main/themes/Catppuccin%20Frappe.tmTheme
-wget -P "$(bat --config-dir)/themes" https://github.com/catppuccin/bat/raw/main/themes/Catppuccin%20Macchiato.tmTheme
-wget -P "$(bat --config-dir)/themes" https://github.com/catppuccin/bat/raw/main/themes/Catppuccin%20Mocha.tmTheme
-```
+   ```bash
+   wget -P "$(bat --config-dir)/themes" https://github.com/catppuccin/bat/raw/main/themes/Catppuccin%20Latte.tmTheme
+   wget -P "$(bat --config-dir)/themes" https://github.com/catppuccin/bat/raw/main/themes/Catppuccin%20Frappe.tmTheme
+   wget -P "$(bat --config-dir)/themes" https://github.com/catppuccin/bat/raw/main/themes/Catppuccin%20Macchiato.tmTheme
+   wget -P "$(bat --config-dir)/themes" https://github.com/catppuccin/bat/raw/main/themes/Catppuccin%20Mocha.tmTheme
+   ```
 
 3. Rebuild bat's cache:
 
-```bash
-bat cache --build
-```
+   ```bash
+   bat cache --build
+   ```
 
 4. Run `bat --list-themes`, and check if the themes are present in the list.
 
