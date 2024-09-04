@@ -1,5 +1,5 @@
-import { join } from "https://deno.land/std@0.219.1/path/join.ts";
-import { parseArgs } from "https://deno.land/std@0.219.1/cli/parse_args.ts";
+import { join } from "https://deno.land/std@0.224.0/path/join.ts";
+import { parseArgs } from "https://deno.land/std@0.224.0/cli/parse_args.ts";
 
 import { compile as vscCompile } from "npm:@catppuccin/vscode@3.12.0";
 import { flavorEntries, type FlavorName } from "npm:@catppuccin/palette@1.1.0";
