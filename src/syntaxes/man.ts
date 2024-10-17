@@ -25,4 +25,11 @@ export default (p: Palette): VSCTheme["tokenColors"] => [
       foreground: p.pink,
     },
   },
+  {
+    name: "Man page options",
+    scope: ["entity.name"],
+    settings: {
+      foreground: p.teal,
+    },
+  },
 ];
