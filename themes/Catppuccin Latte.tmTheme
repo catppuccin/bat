@@ -2017,6 +2017,17 @@
         </dict>
       </dict>
       <dict>
+        <key>name</key>
+        <string>Man page options</string>
+        <key>scope</key>
+        <string>entity.name</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#179299</string>
+        </dict>
+      </dict>
+      <dict>
         <key>scope</key>
         <string>markup.heading.1.markdown</string>
         <key>settings</key>
