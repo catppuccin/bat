@@ -1,7 +1,7 @@
 import { join } from "https://deno.land/std@0.219.1/path/join.ts";
 import { parseArgs } from "https://deno.land/std@0.219.1/cli/parse_args.ts";
 
-import { compile as vscCompile } from "npm:@catppuccin/vscode@3.12.0";
+import { compile as vscCompile } from "npm:@catppuccin/vscode@3.17.0";
 import { flavorEntries, type FlavorName } from "npm:@catppuccin/palette@1.1.0";
 import plist from "npm:plist@3.1.0";
 
