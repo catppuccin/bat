@@ -1,4 +1,4 @@
-import { type ColorName, type FlavorName, flavors } from "npm:@catppuccin/palette@1.1.0";
+import { type ColorName, type FlavorName, flavors } from "npm:@catppuccin/palette@1.7.1";
 import type { Overrides, VSCTheme } from "./main.ts";
 import { customTokens } from "./syntaxes/index.ts";
 
