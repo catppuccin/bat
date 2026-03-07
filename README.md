@@ -34,7 +34,7 @@
 <img src="assets/mocha.webp"/>
 </details>
 
-## Usage
+## Installation
 
 1. Create a theme folder in bat's [configuration directory](https://github.com/sharkdp/bat#configuration-file) by running:
 
